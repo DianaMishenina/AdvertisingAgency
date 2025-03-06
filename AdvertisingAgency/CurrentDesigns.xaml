@@ -1,0 +1,36 @@
+﻿<Window x:Class="AdvertisingAgency.CurrentDesigns"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AdvertisingAgency"
+        mc:Ignorable="d"
+        Title="CurrentDesigns" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="250*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Orientation="Vertical" Grid.Column="0">
+            <TextBlock Text="Тип*:" Margin="10,11,0,0"/>
+            <TextBlock Text="Описание:" Margin="10,25,0,0"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Grid.Column="1">
+            <TextBox x:Name="tbType" Margin="10,10,0,0"/>
+            <TextBox x:Name="tbDescription" Margin="10,25,0,0" Height="200"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Grid.Column="2">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Column="1" Margin="0,10,25,0">
+                <Button x:Name="btnBack" Content="Назад" Height="35" Width="140" Click="btnBack_Click"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Column="1" Margin="0,10,25,0">
+                <Button x:Name="btnSave" Content="Сохранить" Height="35" Width="140" Click="btnSave_Click"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Column="1" Margin="0,10,25,0">
+                <Button x:Name="btnDelete" Content="Удалить" Height="35" Width="140" Click="btnDelete_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

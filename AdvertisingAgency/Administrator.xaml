@@ -1,0 +1,22 @@
+﻿<Window x:Class="AdvertisingAgency.Administrator"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AdvertisingAgency"
+        mc:Ignorable="d"
+        Title="Administrator" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Column="1" Margin="0,10,25,0">
+                <Button x:Name="btnBack" Content="Назад" Height="35" Width="140" Click="btnBack_Click"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Column="1" Margin="0,10,25,0">
+                <Button x:Name="btnUsersList" Content="К списку пользователей" Height="35" Width="140" Click="btnUsersList_Click"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Column="1" Margin="0,10,25,0">
+                <Button x:Name="btnAddUser" Content="Добавить пользователя" Height="35" Width="140" Click="btnAddUser_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
